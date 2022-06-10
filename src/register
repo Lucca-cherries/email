@@ -1,0 +1,7 @@
+$$("#username")[0].value = "test_jgq";
+$$("#password")[0].value = "Jgq12345";
+$$("#phone")[0].value = "18512527646";
+$("#phoneCodeButton").click();
+$$("#phoneCode")[0].value = "1234";
+$("body > div.register-container > div > div > div.m-body > div.m-register-box-free > div.custom-checkbox.service > span").click();
+$("body > div.register-container > div > div > div.m-body > div.m-register-box-free > div.register-option > a.j-register").click();
