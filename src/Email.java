@@ -1,11 +1,10 @@
 package src;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.StringTokenizer;
 
 
-public class EmailUserAgent {
+public class Email {
 	
 	private static BufferedReader stdIn;
 
@@ -141,7 +140,7 @@ public class EmailUserAgent {
 	
 	public static void main(String[] args) throws Exception {
 		
-		EmailUserAgent emailUserAgent=new EmailUserAgent();
+		Email email =new Email();
 		
 		String choice="1";		
 		while(!choice.equals("0")) 
@@ -162,11 +161,11 @@ public class EmailUserAgent {
 			
 			if (choice.equals("1")) // 发送邮件
 			{
-				emailUserAgent.send();
+				email.send();
 			}
 			else if(choice.equals("2")) // 接收邮件
 			{
-				emailUserAgent.receive();
+				email.receive();
 			}
 			
 		}
